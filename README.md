@@ -29,7 +29,6 @@ Use `docker-compose stop` to stop docker container and app execution.
 - [React](https://es.reactjs.org/): A JavaScript library for building user interfaces
 - [Styled components](https://styled-components.com/): utilises tagged template literals to style your component
 - [Material UI](https://material-ui.com/): frontend components library
-- [React-Redux](https://react-redux.js.org/introduction/quick-start): official React binding for Redux
 - [Apollo client](https://www.apollographql.com/): library to manage connections with graphql APIs
 - [Babel](https://babeljs.io/): JavaScript compiler
 - [TypeScript](https://www.typescriptlang.org/)
