@@ -1,8 +1,19 @@
+import {
+  CharactersData,
+  GET_CHARACTERS_QUERY,
+} from '@Api/RickAndMortyApi/queries/characters';
+import { useQuery } from '@apollo/client';
 import React from 'react';
 import './App.css';
 import logo from './logo.svg';
 
 const App: () => JSX.Element = () => {
+  const { loading, error, data } = useQuery<CharactersData>(
+    GET_CHARACTERS_QUERY,
+  );
+
+  console.log(data);
+
   return (
     <div className="App">
       <header className="App-header">
