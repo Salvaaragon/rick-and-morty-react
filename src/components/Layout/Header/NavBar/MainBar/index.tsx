@@ -10,6 +10,7 @@ type MainBar = (props: MainBarProps) => JSX.Element;
 
 const MainBar: MainBar = (props: MainBarProps) => {
   const { listItems } = props;
+
   return (
     <SCToolbar>
       <Logo />
