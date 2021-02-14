@@ -1,10 +1,12 @@
 import { Typography } from '@material-ui/core';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 type Logo = () => JSX.Element;
 
 const Logo: Logo = () => {
-  return <Typography color="secondary">Rick and Morty React</Typography>;
+  const { i18n } = useTranslation();
+  return <Typography color="secondary">{i18n.t('navbar:title')}</Typography>;
 };
 
 export default Logo;
