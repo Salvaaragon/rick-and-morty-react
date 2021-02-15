@@ -3,6 +3,7 @@ import { SCLink } from '@Components/Custom/SCLink';
 import { SCToolbar } from '@Components/Custom/SCToolbar';
 import { MenuItem } from '@material-ui/core';
 import React from 'react';
+import LanguageSelector from '@Components/Layout/Header/NavBar/LanguageSelector';
 import { NavBarList } from '../types';
 
 type MainBarProps = NavBarList;
@@ -22,6 +23,7 @@ const MainBar: MainBar = (props: MainBarProps) => {
           </MenuItem>
         </SCLink>
       ))}
+      <LanguageSelector />
     </SCToolbar>
   );
 };

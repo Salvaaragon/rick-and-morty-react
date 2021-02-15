@@ -1,4 +1,5 @@
 import { SCLink } from '@Components/Custom/SCLink';
+import LanguageSelector from '@Components/Layout/Header/NavBar/LanguageSelector';
 import { NavBarListItem } from '@Components/Layout/Header/NavBar/types';
 import {
   Drawer,
@@ -37,6 +38,7 @@ const DrawerMenu: DrawerMenu = (props: DrawerMenuProps) => {
             </SCLink>
           ))}
         </List>
+        <LanguageSelector />
       </div>
     </Drawer>
   );
