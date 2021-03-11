@@ -7,13 +7,12 @@
         "root": ".",
         "alias": {
           "@Assets": "./src/assets",
-          "@Api": "./src/api",
-          "@App": "./src/app",
           "@Components": "./src/components",
-          "@Router": "./src/router",
-          "@Screens": "./src/screens",
+          "@Containers": "./src/containers",
+          "@Graphql": "./src/graphql",
+          "@Model": "./src/model",
           "@Services": "./src/services",
-          "@Types": "./src/types",
+          "@Styles": "./src/styles",
           "@Utils": "./src/utils"
         }
       }
