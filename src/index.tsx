@@ -1,13 +1,13 @@
-import { client } from '@Api/RickAndMortyApi';
 import { ApolloProvider } from '@apollo/client';
-import App from '@App/App';
+import App from '@Containers/App/App';
+import { client } from '@Graphql/Api';
 import { MuiThemeProvider } from '@material-ui/core';
-import theme from '@Utils/theme';
+import i18n from '@Services/i18n/config';
+import theme from '@Styles/theme';
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import { I18nextProvider } from 'react-i18next';
 import { ThemeProvider } from 'styled-components';
-import i18n from '@Services/i18n/config';
 
 ReactDOM.render(
   <ApolloProvider client={client}>
