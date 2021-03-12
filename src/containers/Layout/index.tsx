@@ -6,7 +6,7 @@ import Header from './Header';
 
 const Layout: React.FC = () => {
   return (
-    <Container maxWidth="lg" disableGutters>
+    <Container maxWidth={false} disableGutters>
       <Header />
       <Content />
       <Footer />

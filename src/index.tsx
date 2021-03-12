@@ -1,5 +1,5 @@
 import { ApolloProvider } from '@apollo/client';
-import App from '@Containers/App/App';
+import App from '@Containers/App';
 import { client } from '@Graphql/Api';
 import { MuiThemeProvider } from '@material-ui/core';
 import i18n from '@Services/i18n/config';
