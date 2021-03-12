@@ -1,6 +1,6 @@
-import { Grid } from '@material-ui/core';
+import { Container } from '@material-ui/core';
 import styled from 'styled-components';
 
-export const SCGrid = styled(Grid)`
+export const ContentContainer = styled(Container)`
   background-color: white;
 `;

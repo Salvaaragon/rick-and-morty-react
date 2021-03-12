@@ -1,12 +1,12 @@
 import RoutesList from '@Containers/RoutesList';
 import React from 'react';
-import { SCGrid } from './styles';
+import { ContentContainer } from './styles';
 
 const Content: React.FC = () => {
   return (
-    <SCGrid container>
+    <ContentContainer maxWidth="lg" disableGutters>
       <RoutesList />
-    </SCGrid>
+    </ContentContainer>
   );
 };
 

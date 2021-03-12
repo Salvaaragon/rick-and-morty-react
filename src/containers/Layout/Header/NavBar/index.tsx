@@ -1,21 +1,22 @@
-import { Grid, Hidden } from '@material-ui/core';
+import { Hidden } from '@material-ui/core';
 import React from 'react';
 import MainBar from './MainBar';
 import ResponsiveBar from './ResponsiveBar';
+import { NavbarContainer } from './styles';
 import { NavBarProps } from './types';
 
 const NavBar: React.FC<NavBarProps> = (props: NavBarProps) => {
   const { listItems } = props;
 
   return (
-    <Grid container>
+    <NavbarContainer container>
       <Hidden smDown>
         <MainBar listItems={listItems} />
       </Hidden>
       <Hidden mdUp>
         <ResponsiveBar listItems={listItems} />
       </Hidden>
-    </Grid>
+    </NavbarContainer>
   );
 };
 
