@@ -1,13 +1,13 @@
 import { useQuery } from '@apollo/client';
-import BackgroundImage from '@Assets/images/background.png';
 import Layout from '@Containers/Layout';
 import {
   CharactersData,
   GET_CHARACTERS_QUERY,
 } from '@Graphql/Api/queries/characters';
-import { Grid } from '@material-ui/core';
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { AppContainer } from './styles';
+import GlobalFonts from '@Styles/GlobalFonts';
 
 const App: React.FC = () => {
   const { data } = useQuery<CharactersData>(GET_CHARACTERS_QUERY);
@@ -15,11 +15,12 @@ const App: React.FC = () => {
   console.log(data);
 
   return (
-    <Grid style={{ backgroundImage: `url(${BackgroundImage})` }}>
+    <AppContainer>
+      <GlobalFonts />
       <Router>
         <Layout />
       </Router>
-    </Grid>
+    </AppContainer>
   );
 };
 
